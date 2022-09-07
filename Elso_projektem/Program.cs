@@ -34,6 +34,7 @@ namespace Elso_projektem//névtér
             Console.WriteLine(szam1 / szam2);
             Console.WriteLine(szam3);
             //Valami
+            Console.WriteLine("Valami");
 
             Console.ReadKey();
         }
