@@ -41,11 +41,23 @@ namespace Elso_projektem//névtér
             double szam5 = szam1 * szam2 / szam3;
             Console.WriteLine(szam5);
 
+            //Nem egész számok (Valós számok halmaza)
+            float lebegopontos = 4.2f;
+            double lebegopontos2 = 5.15;
+            Console.WriteLine($"{lebegopontos}, illetve a másik lebegőpontos szám: {lebegopontos2}");
             //Karaktertípus
             char karakter = 'a';
             char karakter2 = 'b';
             string osszefuz = karakter.ToString() + karakter2.ToString();
             Console.WriteLine("Szöveg: {0}{1}",karakter,karakter2);
+
+            //Karaktertömb
+            string karakterek = "karakterek";
+            char[] karaktertomb = karakterek.ToCharArray();
+            for (int i = 0;i<karaktertomb.Length;i++)
+            {
+                Console.Write(karaktertomb[i]);
+            }
             Console.WriteLine(osszefuz);
 
             //Szöveges változók
@@ -61,6 +73,21 @@ namespace Elso_projektem//névtér
             bool igaz = true;
             bool hamis = false;
             Console.WriteLine($"{igaz} {hamis}");
+
+            //Math osztály
+            int math1 = 40;
+            Console.WriteLine(Math.Sqrt(math1));
+            Console.WriteLine(Math.Pow(math1,3));
+            Console.WriteLine(Math.Round(Math.Sqrt(math1),2));
+
+            //Egysosor szöveg beolvasása konzolról:
+            Console.Write("Kérem adja meg a nevét: ");
+            string szoveg_beolvas = Console.ReadLine();
+            Console.WriteLine(szoveg_beolvas);
+
+            //Szám beolvasása konzolról:
+            int szam_beolvas = int.Parse(Console.ReadLine());
+            Console.WriteLine(szoveg_beolvas);
 
             //Kiírás
             Console.WriteLine("1.feladat\n\tMásodik feladat");
